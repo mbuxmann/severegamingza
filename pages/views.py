@@ -13,7 +13,10 @@ def teams(request):
     return render(request, 'pages/teams.html')
 
 def matches(request):
-    return render(request, 'pages/matches.html', {'matches' : Match.objects.all()})
+    matches = Match.objects.all().defer(
+        "id", "league", "division", "leg", "match_date"
+    )
+    return render(request, 'pages/matches.html', {'matches' : matches})
 
 def media(request):
     return render(request, 'pages/media.html')
