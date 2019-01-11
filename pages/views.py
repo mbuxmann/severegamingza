@@ -13,14 +13,7 @@ def teams(request):
     return render(request, 'pages/teams.html')
 
 def matches(request):
-    matches = Match.objects.all()
-    for match in matches:
-        match.pop("id", None)
-        match.pop("league", None)
-        match.pop("division", None)
-        match.pop("leg", None)
-        match.pop("match_date", None)
-    
+    matches = Match.objects.all().only("severe_team", "opponent", "score", "match_result")
     return render(request, 'pages/matches.html', {'matches' : matches})
 
 def media(request):
