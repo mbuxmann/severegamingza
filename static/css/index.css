@@ -1,0 +1,158 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "paragraph1 picture1"
+    "picture2 paragraph2"
+    "paragraph3 picture3"
+    "picture4 paragraph4"
+    "paragraph5 paragraph5";
+  margin-bottom: 40px;
+}
+
+p {
+  display: block;
+  padding-top: 20px;
+}
+
+.box {
+  text-align: justify;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* Paragraphs */
+
+.paragraph1 {
+  grid-area: paragraph1;
+  justify-content: center;
+}
+
+.paragraph2 {
+  grid-area: paragraph2;
+  margin: 0px;
+}
+
+.paragraph3 {
+  grid-area: paragraph3;
+  padding: 0px;
+}
+
+.paragraph4 {
+  grid-area: paragraph4;
+  padding: 0px;
+}
+
+.paragraph5 {
+  grid-area: paragraph5;
+  padding: 0px;
+}
+/* End Paragraphs */
+
+/* Pictures */
+.picture1 {
+  grid-area: picture1;
+  background: url(https://images.pexels.com/photos/929824/pexels-photo-929824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+
+.picture2 {
+  grid-area: picture2;
+  background: url(https://images.pexels.com/photos/929831/pexels-photo-929831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+
+.picture3 {
+  grid-area: picture3;
+  background: url(https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+
+.picture4 {
+  grid-area: picture4;
+  background: url(https://images.pexels.com/photos/21067/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+/* End Pictures */
+
+/* Formation of post links/picture in each paragraph */
+.social ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin-bottom:-4px;
+}
+
+.social img {
+  width: 300px;
+  height: px;
+}
+
+.leagues ul {
+  display: flex;
+  float: left;
+  list-style: none;
+  padding: 0px;
+  margin-bottom:-4px;
+}
+
+.games ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin-bottom:-4px;
+}
+
+.games img {
+  width: 300px;
+}
+.sponsors ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+.sponsors img{
+  width:30vw;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "paragraph1"
+      "picture1"
+      "paragraph2"
+      "picture2"
+      "paragraph3"
+      "picture3"
+      "paragraph4"
+      "picture4"
+      "paragraph5"
+      "paragraph5";
+  }
+  .picture1 {
+    min-height: 200px;
+  }
+  .picture2 {
+    min-height: 200px;
+  }
+  .picture3 {
+    min-height: 200px;
+  }
+  .picture4 {
+    min-height: 200px;
+  }
+}

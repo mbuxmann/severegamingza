@@ -1,0 +1,223 @@
+
+.leagues ul,
+.social ul,
+.games ul {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.leagues li,
+.social li,
+.games li {
+  display: inline-block;
+  width: 33%;
+}
+
+.leagues a,
+.social a,
+.games a {
+  display: block;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Roboto, elvetica, Arial, sans-serif;
+  color: var(--primary);
+}
+
+body {
+  background: #0b0e17;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+}
+
+.navigation {
+  z-index:21;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 90px;
+  background: url("https://image.ibb.co/jd1ozH/Nav_bar.png");
+  background-position: center;
+}
+
+/* Navigation */
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+  /* Dropdown */
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 90px;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  opacity: 0.3;
+  background: url("https://preview.ibb.co/jTyuuo/Glass.png");
+  color: #ffffff;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " +";
+}
+nav ul li ul li {
+  font-weight: 700;
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+/* Dropdown list binds to JS toggle event */
+.nav-dropdown {
+  text-align: center;
+  background-color: rgba(11, 14, 23, 0.5);
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+/* Binds to JS Toggle */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: 90px;
+}
+
+@media only screen and (max-width: 798px) {
+  /* Hamburger nav visible on mobile only */
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    text-align: center;
+    width: 100%;
+    padding: 90px 0 15px;
+  }
+
+  nav ul {
+    background-color: rgba(11, 14, 23, 0.5);
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/* End of Scss */
+/* CSS Variables */
+:root {
+  --primary: #ffffff;
+}
+
+.banner {
+  margin-top: 90px;
+  background: url(https://image.ibb.co/earz6x/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 392px;
+}
+
+.footer {
+  position:fixed;
+  width: 100vw;
+  bottom:0;
+  background: url(https://preview.ibb.co/f5fqDc/footer.png);
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+  z-index: 100;
+}

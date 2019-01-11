@@ -1,0 +1,33 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block title %} Contact Us - Severe Gaming {% endblock %}
+{% block css %} <link rel="stylesheet" href="{% static "css/contact.css" %}"/> {% endblock %}
+{% block body %}
+
+    <!-- Top Container -->
+
+    <section class="maincontainer">
+      <div class="container">
+        <form id="contact" action="/private/contact" method="post">
+          <h3>Contact Form</h3>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" name="name" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your email" type="email" name="from" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your mobile" type="tel" name="phone" tabindex="3">
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Your message" name="message" tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <input type="submit">
+          </fieldset>
+          <span id="server-message"></span>
+        </form>
+      </div>
+    </section>
+    
+{% endblock %}

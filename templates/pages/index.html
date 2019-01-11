@@ -1,0 +1,103 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block css %} <link rel="stylesheet" href="{% static "css/index.css" %}"/> {% endblock %}
+{% block body %}
+    <section class="container">
+      <header class="box paragraph1">
+        <h1>Welcome to Severe Gaming</h1>
+        <p>
+          Severe Gaming is a Multi-Gaming Organisation founded in 2010. Over the years it has served as a platform for players
+          to compete in many different games at a highly competitive level as well as serving as a home for players to improve
+          their skills and build strong relationships with one another. Severe Gaming sees the potential in the South African
+          eSports scene and aims to develop and grow with it as the future unfolds.
+        </p>
+      </header>
+      <div class="picture1"></div>
+      <div class="picture2"></div>
+      <header class="paragraph2">
+        <h1>WE THROW DOWN IN</h1>
+        <div class="games">
+          <ul>
+            <li>
+              <a href="https://www.dota2.com/">
+                <img src="{% static "/images/dota.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.counter-strike.net/">
+                <img src="{% static "/images/csgo.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://playhearthstone.com/">
+                <img src="{% static "/images/hearthstone.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://playoverwatch.com/">
+                <img src="{% static "/images/overwatch.png" %}">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <header class="paragraph3">
+        <h1>MAJOR LEAGUES WE ATTEND</h1>
+        <div class="leagues">
+          <ul>
+            <li>
+              <a href="https://play.esea.net/">
+                <img src="{% static "/images/esea.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.digitalgamingleague.co.za/">
+                <img src="{% static "/images/vsgaming.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="http://www.ballistixmasters.co.za/">
+                <img src="{% static "/images/ballistix.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wesg.com/en/dota2">
+                <img src="{% static "/images/wesg.png" %}">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="picture3">
+      </div>
+      <div class="picture4">
+      </div>
+      <header class="box paragraph4">
+        <h1>FOLLOW US ON</h1>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/severegamingza/">
+                <img src="{% static "/images/instagram.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/SevereGamingZA/">
+                <img src="{% static "/images/facebook.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCGw8jG9S-uAiELf0tH_pfWw">
+                <img src="{% static "/images/youtube.png" %}">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/SevereGamingZA">
+                <img src="{% static "/images/twitter.png" %}">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </section>
+{% endblock %}

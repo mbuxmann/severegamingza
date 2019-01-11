@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  grid-template-areas:
+  "picture1 picture2"
+  "picture3 picture4";
+  margin-bottom: 40px;
+}
+
+p {
+  display: block;
+  padding-top: 20px;
+}
+
+.box {
+  text-align: justify;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* Pictures */
+.dota2 {
+  min-height: 425px;
+  grid-area: picture1;
+  background-image: url("http://wallpapersdsc.net/wp-content/uploads/2015/11/Dota_2_Pictures10.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.CSGO{
+  min-height: 425px;
+  grid-area: picture2;
+  background-image:url("http://pixelz.cc/wp-content/uploads/2017/11/counter-strike-global-offensive-uhd-4k-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hearthstone {
+  min-height: 425px;
+  grid-area: picture3;
+  background-image: url("http://www.hearthstonetopdecks.com/wp-content/uploads/2017/07/knightsofthefrozenthronewallpaper002.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overwatch {
+  min-height: 425px;
+  grid-area: picture4;
+  background-image: url("https://static.zerochan.net/Overwatch.full.2134090.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:700;
+  color:#ffffff;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "picture1"
+      "picture2"
+      "picture3"
+      "picture4";
+  }
+  .picture1 {
+    min-height: 200px;
+  }
+  .picture2 {
+    min-height: 200px;
+  }
+  .picture3 {
+    min-height: 200px;
+  }
+  .picture4 {
+    min-height: 200px;
+  }
+}

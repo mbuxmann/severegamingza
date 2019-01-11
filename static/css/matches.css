@@ -1,0 +1,64 @@
+.container {
+}
+.title{
+	margin-top: 20px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid white;
+}
+.paragraph{
+}
+p{
+	display: block;
+	text-align: justify;
+	padding-top: 20px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 0px;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom:100px;
+}
+
+@media (max-width:1056px) {
+h1{
+	font-size:21px;
+}
+p{
+	font-size: 17px;
+}
+}
+@media (max-width:866px) {
+h1{
+	font-size:21px;
+}
+.title{
+	padding-left:20px;
+	padding-right:20px;
+}
+p{
+	font-size: 15px;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+}
+
+@media (max-width:766px) {
+  h1 {
+    font-size:21px;
+  }
+  p {
+    font-size: 15px;
+    padding-left:30px;
+    padding-right:30px;
+  }
+}
