@@ -13,7 +13,7 @@ def teams(request):
     return render(request, 'pages/teams.html')
 
 def matches(request):
-    matches = Match.objects.all().only("severe_team", "opponent", "score", "match_result")
+    matches = Match.objects.values("severe_team", "opponent", "score", "match_result")
     return render(request, 'pages/matches.html', {'matches' : matches})
 
 def media(request):
