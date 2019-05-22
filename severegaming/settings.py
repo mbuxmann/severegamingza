@@ -25,12 +25,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5d0dhs!^z5depj$lq0uz%=!is+rln1&7u$r*c#eq3lnj2c_z9m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['severegamingza.com', 'www.severegamingza.com', 'localhost', '159.65.207.95']
+ALLOWED_HOSTS = ['severegamingza.com', 'www.severegamingza.com', 'localhost',]
 
 
 # Application definition
