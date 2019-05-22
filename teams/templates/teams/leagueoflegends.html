@@ -1,0 +1,23 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block title %} Teams - Severe Gaming {% endblock %}
+{% block css %} 
+<link rel="stylesheet" href="{% static "css/leagueoflegends.css" %}"/> 
+{% endblock %}
+{% block body %}
+<!-- Top Container -->
+
+<div class="container-fluid">
+    <section class="lolteam">
+        <div class="row blackback d-flex justify-content-center">
+            <div class="text">
+                <p>
+                    We currently don't have a League of Legends team. If you are interrested or know any team that
+                    would be interrested please contact us through the contact us page.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>  
+
+{% endblock %}

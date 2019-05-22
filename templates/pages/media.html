@@ -1,0 +1,41 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block title %} Media - Severe Gaming {% endblock %}
+{% block css %} <link rel="stylesheet" href="{% static "css/media.css" %}"/> {% endblock %}
+{% block body %}
+
+    <!-- Main Container-->    
+
+    <div class="container-fluid">
+  
+            <!-- Row One -->
+            <div class="row">
+              <div class="col-sm no-padding">
+                <a href="https://www.youtube.com/channel/UCGw8jG9S-uAiELf0tH_pfWw">
+                  <div class="DOTA2"></div>
+                </a>
+              </div>
+              <div class="col-sm no-padding">
+                  <a href="https://www.youtube.com/channel/UCGw8jG9S-uAiELf0tH_pfWw">
+                    <div class="CSGO"></div>
+                  </a>
+                </div>
+            </div>      
+
+            <!-- Row Two-->
+            <div class="row">
+                <div class="col-sm no-padding">
+                  <a href="https://www.youtube.com/channel/UCGw8jG9S-uAiELf0tH_pfWw">
+                    <div class="hearthstone"></div>
+                  </a>
+                </div>
+                <div class="col-sm no-padding">
+                    <a href="https://www.youtube.com/channel/UCGw8jG9S-uAiELf0tH_pfWw">
+                      <div class="overwatch"></div>
+                    </a>
+                  </div>
+              </div> 
+    
+    </div>
+    
+{% endblock %}

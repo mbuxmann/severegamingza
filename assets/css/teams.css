@@ -1,0 +1,148 @@
+.container-fluid{
+  padding:0 !important;
+  position:relative;
+}
+.teams__strip {
+  position: absolute;
+  width: 20%;
+  height: 90vh;
+  overflow: hidden;
+}
+.teams__strip:nth-child(1) {
+  left: 0%;
+}
+.teams__strip:nth-child(2) {
+  left: 20%;
+}
+.teams__strip:nth-child(3) {
+  left: 40%;
+}
+.teams__strip:nth-child(4) {
+  left: 60%;
+}
+.teams__strip:nth-child(5) {
+  left: 80%;
+}
+.teams__strip:nth-child(1) .teams__content {
+  background-image: url("/static/images/dota2-teams.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.teams__strip:nth-child(2) .teams__content {
+  background-image: url("/static/images/csgo-teams.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.teams__strip:nth-child(3) .teams__content {
+  background-image: url("/static/images/hearthstone-teams.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.teams__strip:nth-child(4) .teams__content {
+  background-image: url("/static/images/lol-teams.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.teams__strip:nth-child(5) .teams__content {
+  background-image: url("/static/images/rocket-teams.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.teams .teams__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+.teams .teams__content:hover:before {
+  transform: skew(-30deg) scale(3) translate(0, 0);
+  opacity: 0.1;
+}
+.teams .teams__content:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.05;
+  transform-origin: center center;
+  transform: skew(-30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes strip1 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip2 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip3 {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip4 {
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip5 {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.footer{
+	display:none;
+}
+
+
+@media screen and (max-width: 760px) {
+  
+  .teams__strip {
+    max-height: 20vh;
+  }
+  .teams__strip:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .teams__strip:nth-child(2) {
+    top: 20vh;
+    left: 0;
+    width: 100%;
+  }
+  .teams__strip:nth-child(3) {
+    top: 40vh;
+    left: 0;
+    width: 100%;
+  }
+  .teams__strip:nth-child(4) {
+    top: 60vh;
+    left: 0;
+    width: 100%;
+  }
+  .teams__strip:nth-child(5) {
+    top: 80vh;
+    left: 0;
+    width: 100%;
+  }
+}

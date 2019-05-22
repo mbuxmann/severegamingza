@@ -1,0 +1,46 @@
+.article{
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+p{
+    text-align: justify;
+}
+
+img{
+    width: 100%;
+}
+
+.authordate{
+    text-align:right;
+}
+
+img.facebook, .reddit, .twitter{
+    width:60px;
+    height:60px;
+}
+
+.socialmediashare{
+    position: fixed;
+    right:0 !important  ;
+    bottom:0;
+    text-align: center;
+}
+
+.mediaicons{
+    display:flex;
+
+}
+
+@media only screen and (max-width: 414px) {
+    img.facebook, .reddit, .twitter{
+        width:50px;
+        height:50px;
+    }
+    
+  }

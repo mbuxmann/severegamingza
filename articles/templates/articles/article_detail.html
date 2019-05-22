@@ -1,0 +1,30 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% load social_share %}
+
+{% load bbcode_tags %}
+{% bbcode entry.bbcode_content %}
+
+{% block title %} {{article.title}} - Severe Gaming {% endblock %}
+{% block css %} <link rel="stylesheet" href="{% static "css/article_detail.css" %}"/> {% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+<div class="article-detail">
+    <div class="article">
+        <h2> {{article.title}} </h2>
+        {{ article.body|safe|bbcode }}
+        <p class="authordate"> Written by: {{article.author}} | {{article.date}}</p>
+        <img src="{{ article.thumb.url }}" />
+    </div>
+</div>
+<div class="socialmediashare">
+<h1>SHARE</h1>
+<div class="mediaicons">   
+{% post_to_facebook object_or_url %}
+{% post_to_twitter "{{article.hook}}" object_or_url %}
+{% post_to_reddit "{{article.hook}}" object_or_url %}
+</div>
+</div>
+</div>
+{% endblock %}

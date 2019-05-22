@@ -1,0 +1,15 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block title %} Signup - Severe Gaming {% endblock %}
+{% block css %} <link rel="stylesheet" href="{% static "css/signupform.css" %}"/> {% endblock %}
+{% block body %}
+<div class="container">
+    <h2>Signup</h2>
+    <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Signup">
+    </form>
+
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block title %} Matches - Severe Gaming {% endblock %}
+{% block css %} 
+<link rel="stylesheet" href="{% static "css/matches.css" %}"/> 
+<script src="{% static "scripts/tables.js" %}"></script>
+{% endblock %}
+{% block body %}
+
+
+
+
+  <section>
+    
+  
+    <h1>Recent Matches</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Severe Team</th>
+            <th>Opponent</th>
+            <th>League</th>
+            <th>Score</th>
+            <th>Match Result</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          {% for matches in matches %}
+          <tr>
+            <td>{{matches.severe_team}}</td>
+            <td>{{matches.opponent}}</td>
+            <td>{{matches.league}}</td>
+            <td>{{matches.score}}</td>
+            <td>{{matches.match_result}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+
+{% endblock %}

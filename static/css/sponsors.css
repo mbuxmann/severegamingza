@@ -1,0 +1,33 @@
+
+.title{
+	margin-top: 0px;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 3px solid white;
+}
+
+p{
+	display: block;
+	text-align: justify;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.my-container .my-row{
+	margin-bottom:20px;
+	
+}
+
+.container{
+	min-height:48vh;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}

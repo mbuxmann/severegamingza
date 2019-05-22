@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    
+}
+
+h2{
+    text-align: left;
+    margin: 10px 0px 0px 0px;
+    
+}
+img {
+    width: inherit;
+    height: inherit;
+}
+
+
+p{
+    text-align: justify;
+}
+
+.article-thumb{
+    cursor: pointer;
+}
+
+.article-thumb {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .article-thumb:hover, .article-thumb:focus, .article-thumb:active {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+  }
+  
+  .container-fluid{
+      overflow:hidden;
+  }

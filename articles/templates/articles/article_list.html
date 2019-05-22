@@ -1,0 +1,28 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% load bbcode_tags %}
+{% block title %} News - Severe Gaming {% endblock %}
+{% block css %} 
+<link rel="stylesheet" href="{% static "css/news.css" %}"/>
+<script src="{% static "scripts/click.js" %}"></script>
+{% endblock %}
+{% block body %}
+
+    <div class="container-fluid">
+        <h1>Latest News</h1>
+            <div class="articles"> 
+            <div class="row"> 
+            {% for article in articles %}
+                <div class="col-sm-4 article article-thumb">
+                    <img src="{{ article.thumb.url }}" />
+                    <h2> {{ article.title }} </h2>
+                    <p> Article By: {{ article.author }} | {{article.about}}</p>
+                    <p> {{ article.snippet|safe|bbcode }} <a class="divLink" href="{% url 'articles:detail' slug=article.slug %}"></a>Read more</p>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

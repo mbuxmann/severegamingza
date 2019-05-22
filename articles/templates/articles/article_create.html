@@ -1,0 +1,19 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block title %} Create Article - Severe Gaming {% endblock %}
+{% block css %} 
+<link rel="stylesheet" href="{% static "css/create_article.css" %}"/>
+<script src="{% static "scripts/slugify.js" %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h2>Create an Awesome New Article</h2>
+        <form class="site-form" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" value="Create">
+        </form>
+    </div>
+  
+{% endblock %}
