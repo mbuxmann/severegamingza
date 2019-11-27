@@ -1,7 +1,4 @@
-# SeveregamingZA
-Severe Gaming Website 
-![Welcome Page](/personal/assets/webdev/severegamingza/images/home.png)
-
+# SeveregamingZA Website
 
 I have huge passion for eSports, especially for DOTA 2 and thought it would be a great way and oppurtinity to learn Django and Python by creating a website for Severe Gaming, a multi gaming organization that I manage and used to play for. 
 
@@ -30,22 +27,14 @@ This project will always be close to my heart since this was my first 'big proje
 <b>Website:</b> [SeveregamingZA](https://severegamingza.com)
 
 ### Screenshots
-<div class="box alt">
-	<div class="row 50% uniform">
-		<div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/home2.png" alt="Home page Two" /></span></div>
-		<div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/news.png" alt="login page" /></span></div>
-		<div class="u$"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/articledetail.png" alt="register page" /></span></div>
-        <div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/createarticle.png" alt="loggedin page" /></span></div>
-		<div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/teams.png" alt="editprofile page" /></span></div>
-	</div>
-</div>
-<div class="box alt">
-	<div class="row 50% uniform">
-		<div class="u$"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/dotateam.png" alt="Home page Two" /></span></div>
-        <div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/media.png" alt="register page" /></span></div>
-        <div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/recentmatches.png" alt="login page" /></span></div>
-        <div class="u$"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/contactus.png" alt="loggedin page" /></span></div>
-        <div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/login.png" alt="register page" /></span></div>
-        <div class="6u"><span class="image fit"><img src="/personal/assets/webdev/severegamingza/images/admin.png" alt="editprofile page" /></span></div>
-	</div>
-</div>
+![alt text][Welcome Page]
+![alt text][Welcome Page Two] 
+![alt text][Latest News Page]
+![alt text][Article Page]
+![alt text][Severe DOTA2]
+
+[Welcome Page]:https://bitvivaz.com/personal/assets/webdev/severegamingza/images/home.png "Welcome Home Page"
+[Welcome Page Two]:https://bitvivaz.com/personal/assets/webdev/severegamingza/images/home2.png "Welcome Home Page Two"
+[Latest News Page]:https://bitvivaz.com/personal/assets/webdev/severegamingza/images/news.png "Latest News Page"
+[Article Page]:https://bitvivaz.com/personal/assets/webdev/severegamingza/images/articledetail.png "Article Page"
+[Severe DOTA2]:https://bitvivaz.com/personal/assets/webdev/severegamingza/images/dotateam.png "Severe DOTA 2"
