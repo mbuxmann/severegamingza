@@ -10,6 +10,7 @@ This project will always be close to my heart since this was my first 'big proje
 
 ### Tech Stack 
 - Django
+- Python
 - HTML
 - CSS
 - JavaScript
