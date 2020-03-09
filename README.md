@@ -25,8 +25,6 @@ This project will always be close to my heart since this was my first 'big proje
 
 <b>Source code:</b> [GitHub](https://github.com/bitVivAZ/SeveregamingZA)
 
-<b>Website:</b> [SeveregamingZA](https://severegamingza.com)
-
 ### Screenshots
 ![alt text][Welcome Page]
 ![alt text][Welcome Page Two] 
