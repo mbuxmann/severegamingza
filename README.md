@@ -1,6 +1,6 @@
 # SeveregamingZA Website
 
-I have huge passion for eSports, especially for DOTA 2 and thought it would be a great way and oppurtinity to learn Django and Python by creating a website for Severe Gaming, a multi gaming organization that I manage and used to play for. 
+I have huge passion for eSports, especially for DOTA 2 and thought it would be a great way and oppurtinity to learn Django and Python by creating a website for Severe Gaming, a multi gaming organization that I used to manage and played for. 
 
 Going into this project I only really knew HTML and CSS, however after a few coding tutorials on YouTube I learned the basics of Django and BootStrap in no time. Since this was my first time creating a website and designing one I had no idea how I wanted it to look like until one of our previous Counter-Strike players made our awesome banner. After seeing it and browsing codepen and different websites to draw inspiration from I had a solid idea and vision of how I wanted it to look like.
 
