@@ -25,8 +25,6 @@ Unfortunatly we disbanded in 2019 and thus decided to take the website off.
 - Register, login and create article page to enable anyone to write articles
 - Most of the page info is rendered from the database (SQLite) which makes it easy to add/edit or remove any important information through the admin dashboard
 
-<b>Source code:</b> [GitHub](https://github.com/bitVivAZ/SeveregamingZA)
-
 ### Screenshots
 ![alt text][Welcome Page]
 ![alt text][Welcome Page Two] 
