@@ -37,7 +37,7 @@ folder-color-common==0.0.86
 future==0.18.2
 gpg===1.13.1-unknown
 gunicorn==20.0.4
-httplib2==0.14.0
+httplib2==0.18.0
 idna==2.8
 isort==4.3.21
 jedi==0.15.2
