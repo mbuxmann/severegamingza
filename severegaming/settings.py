@@ -1,3 +1,4 @@
+import django_heroku
 
 """
 Django settings for severegaming project.
@@ -25,12 +26,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = 'pff)3_)%6llp#wot_^2@a-!ga#zu!p)(j3@lby2#%$r2kkk=im'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['severegamingza.com', 'www.severegamingza.com', 'localhost',]
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     'teams',
     'achievements',
     'precise_bbcode',
+    'django_social_share',
 
 ]
 
@@ -137,3 +139,6 @@ MEDIA_URL = '/mediafiles/'
 STATICFILES_DIRS = [
 	STATIC_DIR,
 ]
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())

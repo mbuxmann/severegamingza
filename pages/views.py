@@ -18,13 +18,13 @@ def login_portal(request):
 def register_portal(request):
     return redirect('accounts:signup')
 
-def view_400(request):
+def view_400(request, exception):
     return render (request, 'pages/400.html')
 
-def view_403(request):
+def view_403(request, exception):
     return render (request, 'pages/403.html')
 
-def view_404(request):
+def view_404(request, exception):
     return render (request, 'pages/404.html')
 
 def view_500(request):
