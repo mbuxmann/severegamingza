@@ -1,0 +1,61 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block title %} Teams - Severe Gaming {% endblock %}
+{% block css %} 
+<link rel="stylesheet" href="{% static "css/teams.css" %}"/> 
+<script src="{% static "scripts/click.js" %}"></script>
+{% endblock %}
+{% block body %}
+<!-- Top Container -->
+
+<div class="container-fluid">
+  
+
+    
+  
+    <section class="teams">
+      
+      <!--- DOTA 2 -->
+
+      <article class="teams__strip">
+        <a href="dota">
+          <div class="teams__content"></div>
+        </a>
+      </article>
+
+      <!--- CSGO -->
+
+      <article class="teams__strip">
+        <a href="csgo">
+          <div class="teams__content"></div>
+        </a>
+      </article>
+
+      <!--- Hearthstone -->
+      
+      <article class="teams__strip">
+        <a href="hearthstone">
+          <div class="teams__content"></div>
+        </a>
+      </article>
+
+      <!--- LoL -->
+
+      <article class="teams__strip">
+        <a href="lol">
+          <div class="teams__content"></div>
+        </a>
+      </article>
+
+      <!--- Rocket League -->
+
+      <article class="teams__strip">
+        <a href="rocketleague">
+          <div class="teams__content"></div>
+        </a>
+      </article>
+
+        </section>
+
+      </div>     
+      {% endblock %}

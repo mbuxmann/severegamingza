@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!-- Title of Page -->
+    
+    <title>{% block title %} 403 - Severe Gaming {% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom CSS -->
+
+    <link rel="shorcut icon" type="image/png" href="{% static "images/favicon.png" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/error.css" %}">
+    {% block css %} {% endblock %}
+    <meta charset="UTF-8">
+    <title> Severe Gaming </title>
+    </head>
+    
+    <body>
+        <div class='error'>
+            <h1 class='code'>404</h1>
+            <h2 class='desc'>Ops... There's something wrong.</h2>
+          </div>
+    </body>
+</html>

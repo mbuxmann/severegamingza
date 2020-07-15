@@ -1,0 +1,137 @@
+/* index.css */
+
+.box {
+  text-align: justify;
+  font-weight: 700;
+  padding: 50px;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+p {
+    display: block;
+    padding-top: 20px;
+    font-size: 1.3rem;
+
+  }
+
+.sub-coll ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin-bottom:0px;
+
+  }
+
+img {
+      width: 100%;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+
+/* Pictures */
+
+.picture1 {
+  background: url("/static/images/picture1.bfdcb406e0e2.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+.picture2 {
+  background: url("/static/images/picture2.23ba4e646002.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height:200px;
+}
+
+.picture3 {
+  background: url("/static/images/picture3.a5d43fc1aca0.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+.picture4 {
+  background: url("/static/images/picture4.72616fdd0929.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+/* End Pictures */
+
+/* Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  
+
+  .box {
+    padding: 20px;
+  }
+  
+  h1 {
+    padding: 10px 0px 10px 0px;
+    font-size: 2rem;
+  }
+  
+  p {
+      padding-top: 0px;
+      font-size: 0.8rem;
+    }
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {  
+  
+  .box {
+    padding: 20px;
+  }
+  
+  h1 {
+    padding: 10px 0px 10px 0px;
+    font-size: 2rem;
+  }
+  
+  p {
+      padding-top: 0px;
+      font-size: 0.8rem;
+    }
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 900px) {
+  .picture1, .picture2, .picture3, .picture4{
+    min-height: 0px;
+  }
+}

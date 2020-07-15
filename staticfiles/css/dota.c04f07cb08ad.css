@@ -1,0 +1,269 @@
+.dotateam{
+    background-image: url("/static/images/dota2-teams.33b3e12c071b.jpg");
+    min-height:100vh;
+    min-width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+}
+.container-fluid{
+    padding:0;
+    overflow-x: hidden;
+}
+
+.blackback{
+    z-index: 2;
+    margin: 30px; 
+    background-color:rgba(0,0,0,0.5);
+}
+
+.row {
+	margin-bottom: 15px;
+}
+.footer{
+    display:none;
+}
+
+p{
+    word-wrap: break-word;
+}
+img{
+    width:inherit;
+    height:inherit;
+}
+
+.name{
+    font-size: inherit;
+    text-align: center;
+    font-weight: bolder;
+}
+.position{
+    font-size: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+h1{
+    padding: 10px 0 10px 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+  }
+  table{
+	width:100%;
+	table-layout: fixed;
+  }
+  .tbl-header{
+	background-color: rgba(39, 64, 68, 0.9);
+   }
+  .tbl-content{
+	height:65vh !important;
+	overflow-x:auto;
+	margin-top: 0px;
+	border: 1px solid rgba(255,255,255,0.3);
+	}
+	
+  th{
+	padding: 20px 15px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.5rem !important; 
+	color: #fff;
+	text-transform: uppercase;
+	}
+	
+  td{
+	padding: 15px;
+	text-align: center;
+	vertical-align:middle;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+	color: #fff;
+	border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+  
+  
+  /* demo styles */
+  
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  body{
+	background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+	background: linear-gradient(to right, #25c481, #25b7c4);
+	font-family: 'Roboto', sans-serif;
+  }
+  section{
+	margin: 10px 50px 10px 50px;
+  }
+    
+  
+  /* for custom scrollbar for webkit browser*/
+  
+  ::-webkit-scrollbar {
+	  width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+  ::-webkit-scrollbar-thumb {
+	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	} 
+
+	  h1{
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 15px;
+		}
+		
+	  table{
+		width:100%;
+		table-layout: fixed;
+	  }
+	  .tbl-header{
+		background-color: rgba(39, 64, 68, 0.9);
+	   }
+	  .tbl-content{
+		height:300px;
+		overflow-x:auto;
+		margin-top: 0px;
+		border: 1px solid rgba(255,255,255,0.3);
+	  }
+	  
+	  
+	  /* demo styles */
+	  
+	  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+	  body{
+		background: -webkit-linear-gradient(to bottom left, #0b0e17, #464a60);
+		background: linear-gradient(to bottom left, #0b0e17, #464a60);
+		font-family: 'Roboto', sans-serif;
+		}
+		
+	  section{
+		margin: 50px;
+	  }
+	  
+	  
+	  /* for custom scrollbar for webkit browser*/
+	  
+	  ::-webkit-scrollbar {
+		  width: 6px;
+	  } 
+	  ::-webkit-scrollbar-track {
+		  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	  } 
+	  ::-webkit-scrollbar-thumb {
+		  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		}
+		
+/* Media Queries */
+
+@media (max-width: 785px) {  
+
+	h1{
+		font-size: 15px;
+	}
+h1{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+
+h1{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+
+h1{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+
+h1{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+ont-size: 12px !important;
+h1{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+
+h1{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+
+h1{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+
+
+	th{
+		font-size: 12px !important;
+	}
+
+}
+	 
+@media (max-width: 768px) {  
+
+	h1{
+		font-size: 2.5rem;
+	}
+
+	td{
+		font-size: 1rem !important;
+	
+	}
+	
+	th{
+		font-size: 1rem !important;
+}
+
+@media (max-width: 414px) {  
+
+	h1{
+		font-size: 1.7rem;
+	}
+
+	td{
+		font-size: 9px !important;
+	
+	}
+	
+	th{
+		font-size: 9px !important;
+	}
+
+}
+
+@media (max-width: 320px) {  
+
+	h1{
+		font-size: 1rem;
+	}
+
+	td{
+		font-size: 6px !important;
+	
+	}
+	
+	th{
+		font-size: 6px !important;
+	}
+
+}
+
+}

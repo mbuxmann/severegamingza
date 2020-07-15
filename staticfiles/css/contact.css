@@ -1,0 +1,30 @@
+.errorlist{
+	display:none;
+}
+
+input, textarea {
+    display: block;
+    color:black;
+    width: 100%;
+
+}
+
+label{
+	margin-top: 0.5rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.btn-info{
+	width:100%;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-weight: bold;
+	font-size:1.2rem;
+	height:40px;
+}
+
+h1{
+	text-align: center;
+	margin-top:20px;
+}

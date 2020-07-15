@@ -1,0 +1,36 @@
+/* Pictures */
+div.DOTA2 {
+  min-height: 425px;
+  background-image: url("/static/images/dota2-media.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.CSGO{
+  min-height: 425px;
+  background-image:url("/static/images/csgomedia.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.hearthstone {
+  min-height: 425px;
+  background-image: url("/static/images/hearthstone-media.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.overwatch {
+  min-height: 425px;
+  background-image: url("/static/images/overwatch-media.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+div.no-padding {
+  padding: 0 !important;
+}

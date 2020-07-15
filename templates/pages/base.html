@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+
+    <!-- Title of Page -->
+    
+    <title>{% block title %} Severe Gaming {% endblock %}</title>
+
+    <!-- Bootstrap CDN and requirements -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom CSS -->
+
+    <link rel="shorcut icon" type="image/png" href="{% static "images/favicon.png" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    {% block css %} {% endblock %}
+    <meta charset="UTF-8">
+    <title> Severe Gaming </title>
+    </head>
+    
+    <body>
+
+    <!--Main Navigation bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-container">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="{% url 'pages:home' %}">Home</a>
+          <a class="nav-item nav-link" href="{% url 'articles:news' %}">News</a>
+          <a class="nav-item nav-link" href="{% url 'teams:teams' %}">Teams</a>
+          <a class="nav-item nav-link" href="{% url 'matches:matches' %}">Matches</a>
+          <a class="nav-item nav-link" href="{% url 'pages:media' %}">Media</a>
+          <a class="nav-item nav-link" href="{% url 'pages:sponsors' %}">Sponsors</a>
+          <a class="nav-item nav-link" href="{% url 'contact:contact' %}">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Main Banner -->
+
+    <div class="banner"></div>
+
+
+    <!-- User Controls -->
+    {% if user.is_authenticated %}
+    <div class="user-controls-container">
+      <div class="buttons">
+        <li class="inline"> 
+          <form class="inline" action="{% url 'articles:create' %}" >
+            <button class="btn-link" type="submit">Create Article</button>
+          </form>
+        </li>
+        <li class="inline">
+            <form class="logout-link inline" action="{% url 'accounts:logout' %}" method="post">
+                {% csrf_token %}
+                <button class="btn-link" type="submit">Logout</button>
+            </form>
+        </li>
+      </div>
+    </div>
+    {% endif %}
+    
+    <!-- Main Body Container -->
+    
+    {% block body %}
+    {% endblock %}
+    
+    <!-- Footer -->
+
+    <div class="footer"></div>
+  </body>
+</html>

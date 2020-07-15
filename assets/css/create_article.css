@@ -1,0 +1,28 @@
+.container {
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+form{
+	margin: 0 auto;
+}
+h2{
+    text-align: center;
+}
+
+label{
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#id_thumb{
+    margin-bottom:20px;
+}
+
+.site-form input, .site-form textarea {
+    display: block;
+    color:black;
+    width: 100%;
+
+}
