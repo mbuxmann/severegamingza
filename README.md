@@ -8,7 +8,7 @@ Currently the website only has a register and login page to create articles. The
 
 This project will always be close to my heart since this was my first 'big project'. I've learned so much by making this website and hosting it through DigitalOcean. 
 
-Unfortunatly we disbanded in 2019 and thus decided to take the website off.
+<b>Website:</b> [SeveregamingZA](https://severegaming.herokuapp.com/)
 
 ### Tech Stack 
 - Django
